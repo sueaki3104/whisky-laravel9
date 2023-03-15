@@ -22,5 +22,3 @@ class TweetService
         return $tweet->user_id === $userId;
     }
 }
-
-

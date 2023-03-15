@@ -10,6 +10,12 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 class PutController extends Controller
 {
+    /**
+     * Handle the incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function __invoke(UpdateRequest $request, TweetService $tweetService)
     {
         if (!$tweetService->checkOwnTweet($request->user()->id, $request->id())) {

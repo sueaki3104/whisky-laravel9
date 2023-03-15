@@ -2,12 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Tweet;
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-
-class TweetsSeeder extends Seeder
+class UsersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
